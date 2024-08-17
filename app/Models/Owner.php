@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Owner extends Model
+{
+    use HasFactory;
+
+    protected $fillable = [
+        'user_id',
+        'nama_owner',
+        'nama_toko',
+        'email',
+        'alamat_toko',
+        'no_hp',
+        'logo'
+    ];
+}
